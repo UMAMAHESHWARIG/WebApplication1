@@ -1,0 +1,100 @@
+<!---------<!DOCTYPE html>
+<html lang="">
+<head>
+    
+    <title>query selector</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <p class="simple">Select the dom element</p>
+    <p class="simple">this example demonstrate the query selector</p>
+    <p id="demo">hello</p>
+</body>
+    <script>
+        var x=document.querySelectorAll("p.simple");
+        document.getElementById("demo").innerHTML='The first paragraph(index 0) with class="simple":' + x[0].innerHTML;
+    </script>
+</html>
+------->
+<!---anonymus fnction--------->
+<!---<!DOCTYPE html>
+<html lang="">
+<head>
+    
+    <title>query selector</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+   <h2>event handling</h2>
+    <button id="mybtn">try it</button>
+</body>
+    <script>
+        document.getElementById("mybtn").addEventListener("click",function(){alert("event handler in javascript");})
+    </script>
+</html>----------->
+<!---creating DOm elemnts----------------------------->
+
+<!-------------<html lang="">
+<head>
+    
+    <title>query selector</title>
+ 
+</head>
+
+<body>
+   <h2>click button to make a button element with text</h2>
+    <button onclick="myfunction()">try it</button>
+</body>
+    <script>
+       function myfunction()
+        {
+            var btn=documnet.createElement("BUTTON");
+            var t=document.createTextNode("CLICK ME");
+            btn.appendChild(t);
+            document.body.appendChild(btn);
+        }
+    </script>
+</html>-------->
+
+<!-----<!DOCTYPE html>
+<html>
+<body>
+
+<button onClick="myBtn()">Try It</button>
+
+
+<script>
+function myBtn(){
+var btn = document.createElement("BUTTON");
+var t = document.createTextNode("CLICK ME");
+btn.appendChild(t);
+  document.body.appendChild(btn);}
+</script>
+
+</body>
+</html>------------>
+<!DOCTYPE html>
+<html>
+
+<h1>this is my page</h1>
+    <button onclick="myfunc()">click here</button>
+<script>
+function myfunc()
+    {
+       
+        try{
+             var a=100/0;
+            alert("value of var is "+a);
+        }
+        catch(e)
+            {
+                alert("EROOR"+e.description);
+                }
+    }
+</script>
+
+</body>
+</html>
+
